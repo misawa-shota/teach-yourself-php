@@ -7,9 +7,8 @@
 </head>
 <body>
   <?php
-    $add = bcadd(0.1, 0.7, 1);
-    $mul = bcmul($add, 10, 1);
-    print floor($mul);
+    $message = 'aaa';
+    print $message ?: '空です。';
   ?>
 </body>
 </html>
