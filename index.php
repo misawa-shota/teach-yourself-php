@@ -7,8 +7,9 @@
 </head>
 <body>
   <?php
-    $message = 'aaa';
-    print $message ?: '空です。';
+    $message = '';
+    var_dump($message);
+    print $message ?? 'ノーコメント';
   ?>
 </body>
 </html>
