@@ -7,9 +7,14 @@
 </head>
 <body>
   <?php
-    $message = '';
-    var_dump($message);
-    print $message ?? 'ノーコメント';
+    $rank = '南';
+    $result = match($rank) {
+      '甲' => '大変良いです。',
+      '乙' => '良いです。',
+      '丙' => 'もう少し頑張りましょう。',
+      default => '???'
+    };
+    print $result;
   ?>
 </body>
 </html>
