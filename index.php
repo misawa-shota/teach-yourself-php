@@ -7,24 +7,17 @@
 </head>
 <body>
   <?php
-    $score = 90;
-    switch ($score) {
-      case $score >= 90:
-        print '優';
-        break;
-      
-      case $score >= 70:
-        print '良';
-        break;
-      
-      case $score >= 50:
-        print '可';
-        break;
+    $books = [
+      ['title' => '独習Python', 'price' => 3000],
+      ['title' => '独習Java','price' => 2000],
+      ['title' => '独習PHP', 'price' => 4000]
+    ];
 
-      case 50 > $score:
-        print '不可';
-        break;
-    };
+    $title = [];
+    foreach ($books as $book) {
+      ['title' => $title[]] = $book;
+    }
+    print_r($title);
   ?>
 </body>
 </html>
