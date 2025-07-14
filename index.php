@@ -7,17 +7,12 @@
 </head>
 <body>
   <?php
-    $books = [
-      ['title' => '独習Python', 'price' => 3000],
-      ['title' => '独習Java','price' => 2000],
-      ['title' => '独習PHP', 'price' => 4000]
-    ];
-
-    $title = [];
-    foreach ($books as $book) {
-      ['title' => $title[]] = $book;
+    $sum = 0;
+    for ($i = 1; $i <= 100; $i++) {
+      if ($i % 2 == 0) { continue; }
+      $sum += $i;
     }
-    print_r($title);
+    print $sum;
   ?>
 </body>
 </html>
