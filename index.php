@@ -7,12 +7,14 @@
 </head>
 <body>
   <?php
-    $data = 'リオとニンザブロウとナミとリンリン';
+    $str = 'にわにはにわにわとりがいる';
 
-    print_r(explode('と', $data));
-    print_r(explode('や', $data));
-    print_r(explode('と', $data, 2));
-    print_r(explode('と', $data, -2));
+    print mb_strpos($str, 'にわ').'<br/>';
+    print mb_strpos($str, 'にわ', 2).'<br/>';
+    print mb_strpos($str, 'にわ', -10).'<br/>';
+    print mb_strpos($str, 'かに').'<br/>';
+    print mb_strrpos($str, 'にわ').'<br/>';
+    print mb_strrpos($str, 'にわ', -8).'<br/>';
 
   ?>
 </body>
